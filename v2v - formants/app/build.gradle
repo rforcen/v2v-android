@@ -1,0 +1,28 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '28.0.3'
+
+    defaultConfig {
+        applicationId "com.voicesync.v2v"
+        minSdkVersion 14
+        targetSdkVersion 26
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:support-v4:26.1.0'
+    implementation 'gov.nist.math:jama:1.0.3'
+    implementation 'com.github.rwl:jtransforms:2.4.0'
+    implementation('org.jscience:jscience:4.3.1') {
+        exclude group: "org.javolution"
+    }
+}

@@ -1,0 +1,6 @@
+COMMAND=PREDEX_LIBRARY_TO_DEX_ARCHIVE
+FILE_PATH=/Users/asd/AndroidStudioProjects/v2v/app/libs/jscience.jar
+FILE_HASH=3cf905c5fef64bc14c1ff3cdf19a2181e9069d1c
+DX_VERSION=1.13
+JUMBO_MODE=true
+OPTIMIZE=true
